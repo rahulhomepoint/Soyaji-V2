@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: blue;
+  --color-success: #c4e63b;
+}
+
+@font-face {
+  font-family: number;
+  src: url("./assets/images/archivo/Archivo-Regular.ttf");
+}
+
+@font-face {
+  font-family: number_bold;
+  src: url("./assets/images/archivo/Archivo-Bold.ttf");
+}
+
+@font-face {
+  font-family: text;
+  src: url("./assets/images/Signa/Signa-Regular.ttf");
+}
+
+@font-face {
+  font-family: bold_text;
+  src: url("./assets/images/Signa/Signa-Bold.ttf");
+}
+
+.number {
+  font-family: number !important;
+}
+
+.number_bold {
+  font-family: number_bold;
+}
+
+.text_bold {
+  font-family: bold_text !important;
+}
+
+body {
+  font-family: text;
+}
