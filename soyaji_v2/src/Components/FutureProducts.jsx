@@ -45,7 +45,7 @@ export const FutureProducts = () => {
       onSale: true,
     },
     {
-      id: 1,
+      id: 5,
       productImage: "/src/assets/images/Milk_package.png",
       productName: "Plain Soya Milk",
       currentPrice: "38.00",
@@ -54,7 +54,7 @@ export const FutureProducts = () => {
       onSale: true,
     },
     {
-      id: 2,
+      id: 6,
       productImage: "/src/assets/images/soya_3.png",
       productName: "Chocolate Soya Milk",
       currentPrice: "42.00",
@@ -63,7 +63,7 @@ export const FutureProducts = () => {
       onSale: true,
     },
     {
-      id: 3,
+      id: 7,
       productImage: "/src/assets/images/soya_4.png",
       productName: "Vanilla Soya Milk",
       currentPrice: "40.00",
@@ -72,7 +72,7 @@ export const FutureProducts = () => {
       onSale: false,
     },
     {
-      id: 4,
+      id: 8,
       productImage: "/src/assets/images/plain_curd.png",
       productName: "Plain Soya Curd",
       currentPrice: "35.00",
@@ -83,14 +83,15 @@ export const FutureProducts = () => {
   ];
 
   return (
-    <div className="relative ">
-      {" "}
+    <div className="relative">
+      {/* Background soybean image - responsive positioning */}
       <img
         src={soya_2}
         alt="Soybean"
-        className="absolute -right-10 -top-66 w-90 z-10"
+        className="absolute -right-4 sm:-right-6 md:-right-10 -top-20 sm:-top-40 md:-top-66 w-32 sm:w-40 md:w-90 z-10 opacity-60 md:opacity-100"
       />
-      <section className="py-16  bg-gray-50 mx-60">
+
+      <section className="py-8 sm:py-12 md:py-16 bg-gray-50 mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-60">
         <div className="container mx-auto px-4">
           {/* Header Section */}
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 mt-20">
@@ -100,9 +101,11 @@ export const FutureProducts = () => {
                   {" "}
                   <img src={leaf} className="w-7 h-7" />
                 </span>
-                Buy Organic Products
+                <span className="ml-2 text-sm sm:text-base">
+                  Buy Organic Products
+                </span>
               </div>
-              <h2 className="text-4xl  text-yellow-950 font-bold">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl text-yellow-950 font-bold leading-tight">
                 Featured Products
               </h2>
             </div>
@@ -111,12 +114,19 @@ export const FutureProducts = () => {
               <ArrowUpRightIcon className="w-4 h-4" />
             </button>
           </div>
-          <img src={jute} className=" absolute top-70 left-0 w-46" />
-          {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product) => (
+
+          {/* Decorative jute image - responsive positioning */}
+          <img
+            src={jute}
+            className="absolute top-16 sm:top-20 md:top-70 left-0 w-24 sm:w-32 md:w-46 opacity-60 md:opacity-100"
+            alt="Jute decoration"
+          />
+
+          {/* Products Grid - responsive columns and spacing */}
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+            {products.map((product, index) => (
               <ProductCard
-                key={product.id}
+                key={`${product.id}-${index}`}
                 productImage={product.productImage}
                 productName={product.productName}
                 currentPrice={product.currentPrice}

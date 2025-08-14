@@ -46,15 +46,15 @@ export const Benefits = () => {
   return (
     <section className="py-6 md:py-10 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
-        <h3 className="text-center tracking-[0.15em] font-extrabold text-yellow-950 mb-8 md:mb-12">
+        <h3 className="text-center tracking-wide md:tracking-[0.15em] font-extrabold text-yellow-950 mb-8 md:mb-12">
           SOYA BASED LACTOSE FREE PRODUCTS FOR EVERYONE AT ANY AGE
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 *:size-48 *:w-56 *:mx-auto w-6/6 mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 *:md:size-48 *:size-40 gap-2 *:w-43 *:md:w-56 *:mx-auto w-6/6 mx-auto">
           {benefits.map((item) => {
             const isGreen = item.variant === "green";
             const cardBase =
-              "rounded-3xl p-6 flex flex-col items-center text-center shadow-md";
+              "rounded-3xl md:p-6 p-3 flex flex-col items-center text-center shadow-md";
             const bgClass = isGreen ? "bg-green-800" : "bg-[#cfa785]";
             const titleClass = isGreen ? "text-success" : "text-yellow-950";
             const descClass = isGreen ? "text-white/90" : "text-white";

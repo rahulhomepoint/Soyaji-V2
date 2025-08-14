@@ -15,7 +15,12 @@ export const AboutProduct = () => {
         {/* Top Section */}
         <div className="text-center mb-16 relative">
           {/* Soybeans and leaves decoration */}
-          <img src={soyaSeed} alt="" className=" absolute w-70" />
+          <img
+            src={soyaSeed}
+            alt=""
+            className=" absolute md:w-70 w-60 md:top-auto md:right-auto -top-[220px] -right-10 
+          "
+          />
 
           {/* About Products Button */}
           <button className="flex mx-auto bg-green-900/40  border-none rounded-xl px-2 py-1 text-white mb-6 text-sm">

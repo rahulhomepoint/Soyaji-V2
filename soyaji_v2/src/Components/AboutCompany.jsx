@@ -26,9 +26,9 @@ export const AboutCompany = () => {
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-20">
         {/* Left images */}
-        <div className="flex flex-col md:flex-row gap-8 md:gap-4 items-center md:items-start mx-auto md:w-1/2">
+        <div className="flex  md:flex-row gap-8 md:gap-4 items-center md:items-start mx-auto md:w-1/2">
           {/* Woman drinking milk */}
-          <div className="rounded-full overflow-hidden shadow-lg w-68 h-100 flex-shrink-0 bg-white">
+          <div className="rounded-full overflow-hidden shadow-lg md:w-68 w-38 h-60 md:h-100 flex-shrink-0 bg-white">
             <img
               src={womanImg}
               alt="Woman drinking soya milk"
@@ -36,7 +36,7 @@ export const AboutCompany = () => {
             />
           </div>
           {/* Soya products (ice cream, tofu, leaves) */}
-          <div className="rounded-full overflow-hidden shadow-lg w-68 h-100 flex-shrink-0 bg-white">
+          <div className="rounded-full overflow-hidden shadow-lg md:w-68 w-38 h-60 md:h-100 flex-shrink-0 bg-white">
             <img
               src={iceCreamImg}
               alt="Soyaji Ice Cream"
@@ -103,7 +103,7 @@ export const AboutCompany = () => {
               <ArrowUpRightIcon className="w-4 h-4 text-success" />
             </button>
             {/* Icons row */}
-            <div className="flex items-center gap-8 ">
+            <div className="flex items-center md:gap-8 gap-2 ">
               <div className="flex flex-col items-center">
                 <img
                   src={sugarFreeIcon}
@@ -131,7 +131,6 @@ export const AboutCompany = () => {
       </div>
 
       {/* Bottom right soybean and leaves */}
-     
     </section>
   );
 };

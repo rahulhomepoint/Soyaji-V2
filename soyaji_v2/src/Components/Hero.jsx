@@ -12,12 +12,12 @@ import { Navbar } from "./Navbar";
 export const Hero = () => {
   return (
     <div
-      className="relative flex items-center min-h-[100vh] pl-70 pr-8 pt-44 pb-16 bg-cover bg-no-repeat"
+      className="relative flex items-center md:min-h-[100vh] bg-center pl-4 md:pl-70 pr-8 pt-44 pb-16 bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${bannerImage})` }}
     >
       <Navbar />
       {/* Left Accent Line */}
-      <div className="absolute left-18 top-1/4 h-2/3 flex flex-col items-center justify-center gap-3 ">
+      <div className="absolute left-18 top-1/4 h-2/3  flex-col items-center justify-center gap-3 hidden md:flex">
         {/* <div className="w-1 bg-success h-full rounded-full"></div> */}
         <div className="w-1 h-10 bg-success rounded-2xl"></div>
         <div className="w-1 h-10 bg-white rounded-2xl"></div>
@@ -39,7 +39,7 @@ export const Hero = () => {
           Discover The Joy Of <br /> Organic Living
         </h1>
         {/* Subheading */}
-        <p className="text-lg md:text-sm text-white/90 mb-8 max-w-lg mt-10">
+        <p className="text-xs md:text-sm text-white/90 mb-8 max-w-lg mt-4 md:mt-10">
           Discover the pure taste and nutritional value of our organic produce,
           grown without harmful chemicals. Support sustainable farming practices
           and a healthier planet while enjoying delicious, healthy and crispy
@@ -57,7 +57,7 @@ export const Hero = () => {
       </div>
 
       {/* Navigation Arrows */}
-      <div className="absolute right-12  flex flex-col gap-4 z-20">
+      <div className="absolute right-12  md:flex flex-col gap-4 z-20 hidden ">
         <button className="w-12 h-12 rounded-full border border-white/60 bg-white/10 flex items-center justify-center hover:bg-success text-success hover:text-gray-900 transition-all duration-200">
           <ArrowLeftIcon className="w-5 h-5" />
         </button>
