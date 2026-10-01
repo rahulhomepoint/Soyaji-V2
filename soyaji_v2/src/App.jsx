@@ -15,6 +15,7 @@ import { ContactUs } from "./Components/ContactUs";
 function App() {
   return (
     <div className="">
+      <main>
       <Hero />
       <Benefits />
       <AboutProduct />
@@ -26,6 +27,7 @@ function App() {
       <PatnerWithus />
       <ContactUs />
       <Subscribe />
+      </main>
       <Footer />
     </div>
   );

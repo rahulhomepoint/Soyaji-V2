@@ -29,9 +29,9 @@ export const AboutProduct = () => {
           </button>
 
           {/* Main Title */}
-          <h1 className="text-3xl md:text-5xl font-semibold text-yellow-950 mb-6">
+          <h2 className="text-3xl md:text-5xl font-semibold text-yellow-950 mb-6">
             Experience The Soyaji Products
-          </h1>
+          </h2>
 
           {/* Descriptive Text */}
           <p className="text-xs text-gray-600 max-w-3xl mx-auto leading-relaxed">

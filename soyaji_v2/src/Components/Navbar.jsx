@@ -36,7 +36,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div
+    <header
       className={`navbar top-0 left-0 right-0 z-50 px-2 sm:px-6 py-2 sm:py-4 fixed transition-all duration-300`}
     >
       {/* Main Navbar Container with Rounded Design */}
@@ -51,7 +51,7 @@ export const Navbar = () => {
         <div className="flex items-center gap-4 sm:gap-14">
           {/* SOYAJI Logo with Leaf Icon */}
           <div className="flex items-center gap-2">
-            <img src={logo} className="w-20 sm:w-26" />
+            <img src={logo} alt="Soyaji" className="w-20 sm:w-26" />
           </div>
 
           {/* Desktop Navigation Links - Hidden on Mobile */}
@@ -73,16 +73,16 @@ export const Navbar = () => {
             </div>
 
             {/* Other Navigation Links */}
-            <a className="text-white hover:text-success transition-colors text-sm">
+            <a href="#products" className="text-white hover:text-success transition-colors text-sm">
               Shop
             </a>
-            <a className="text-white hover:text-success transition-colors text-sm">
+            <a href="#about" className="text-white hover:text-success transition-colors text-sm">
               About
             </a>
-            <a className="text-white hover:text-success transition-colors text-sm">
+            <a href="#contact" className="text-white hover:text-success transition-colors text-sm">
               Contact
             </a>
-            <a className="text-white hover:text-success transition-colors text-sm">
+            <a href="#franchise" className="text-white hover:text-success transition-colors text-sm">
               Franchise
             </a>
           </div>
@@ -210,16 +210,16 @@ export const Navbar = () => {
                 </ul>
               </div>
 
-              <a className="block text-white hover:text-success transition-colors text-lg py-2">
+              <a href="#products" className="block text-white hover:text-success transition-colors text-lg py-2">
                 Shop
               </a>
-              <a className="block text-white hover:text-success transition-colors text-lg py-2">
+              <a href="#about" className="block text-white hover:text-success transition-colors text-lg py-2">
                 About
               </a>
-              <a className="block text-white hover:text-success transition-colors text-lg py-2">
+              <a href="#contact" className="block text-white hover:text-success transition-colors text-lg py-2">
                 Contact
               </a>
-              <a className="block text-white hover:text-success transition-colors text-lg py-2">
+              <a href="#franchise" className="block text-white hover:text-success transition-colors text-lg py-2">
                 Franchise
               </a>
             </div>
@@ -232,6 +232,6 @@ export const Navbar = () => {
           </div>
         </div>
       )}
-    </div>
+    </header>
   );
 };

@@ -3,7 +3,7 @@ import Franchiese_bg from "../assets/images/Franchiese_bg.png";
 
 export const Franchise = () => {
   return (
-    <section className="w-full py-8 bg-gray-50">
+    <section id="franchise" className="w-full py-8 bg-gray-50">
       <div className="w-full mx-auto ">
         <div
           className="flex flex-col lg:flex-row  overflow-hidden bg-cover bg-no-repeat  min-h-[450px] "
@@ -18,9 +18,9 @@ export const Franchise = () => {
               </h2>
 
               {/* Main Title */}
-              <h1 className="text-white text-3xl lg:text-5xl text_bold font-bold mb-6 leading-tight">
+              <h2 className="text-white text-3xl lg:text-5xl text_bold font-bold mb-6 leading-tight">
                 Franchise Opportunities
-              </h1>
+              </h2>
 
               {/* Description */}
               <p className="text-white text-base lg:text-xs leading-relaxed mb-8 max-w-xl opacity-95">

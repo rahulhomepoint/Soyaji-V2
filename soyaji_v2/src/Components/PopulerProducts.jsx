@@ -24,6 +24,7 @@ export const PopulerProducts = () => {
 
   return (
     <section
+      id="products"
       className="relative w-full min-h-[80vh] flex items-center overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: `url(${bgJute})` }}
     >
@@ -78,7 +79,7 @@ export const PopulerProducts = () => {
       <div className="relative z-10  mr-10 max-w-3xl">
         <div className="inline-flex items-center gap-3 bg-white/80 rounded-xl px-2 py-1 mb-4">
           <span className="w-7 h-7 ">
-            <img src={leaf} className="" />
+            <img src={leaf} alt="" className="" />
           </span>
           <span className="text-sm font-semibold text-yellow-950 tracking-wide pr-2">
             Most Popular Product

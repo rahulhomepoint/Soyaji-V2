@@ -14,6 +14,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 export const AboutCompany = () => {
   return (
     <section
+      id="about"
       className="relative w-full  overflow-hidden py-12 px-4 md:px-0 "
       style={{ backgroundImage: `url(${juteImg})` }}
     >

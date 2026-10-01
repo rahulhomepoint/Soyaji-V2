@@ -32,6 +32,7 @@ export const ContactUs = () => {
 
   return (
     <div
+      id="contact"
       className="relative overflow-hidden mt-10"
       style={{
         backgroundImage: `url(${contact_bg})`,

@@ -62,7 +62,7 @@ export const PatnerWithus = () => {
           <div className="mt-4 flex flex-col gap-4 md:mt-0 md:w-2/6 relative ">
             <div className="inline-flex items-center bg-gray-200 gap-3 rounded-lg px-2  w-fit">
               <span className="w-7 h-7 ">
-                <img src={leaf} className="" />
+                <img src={leaf} alt="" className="" />
               </span>
               <span className="text-sm font-semibold text-green-800  pr-2">
                 Why Partner With Us

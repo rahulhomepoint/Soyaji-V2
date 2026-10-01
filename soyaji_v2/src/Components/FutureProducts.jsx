@@ -99,7 +99,7 @@ export const FutureProducts = () => {
               <div className="badge badge-ghost bg-gray-200 badge-lg py-2  text-green-800 font-semibold">
                 <span className="text-lg ">
                   {" "}
-                  <img src={leaf} className="w-7 h-7" />
+                  <img src={leaf} alt="" className="w-7 h-7" />
                 </span>
                 <span className="ml-2 text-sm sm:text-base">
                   Buy Organic Products
